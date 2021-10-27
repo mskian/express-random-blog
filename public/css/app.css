@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(7, 241, 18, 0.302);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(235, 201, 13, 0.5);
+}
 html,body{
     height:100%
 }
