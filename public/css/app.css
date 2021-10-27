@@ -169,3 +169,15 @@ footer{
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
+table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+   border-bottom:2px solid #bbb !important;background-color:#d3d3d3
+}
+th {
+   white-space: nowrap;
+}

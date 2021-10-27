@@ -11,3 +11,5 @@ date: "2021-10-27"
 ✍️ Word: | Emicate
 📚 Definition: | To sparkle
 🗣 Pronunciation: | Emikate
+
+- via Random Words API

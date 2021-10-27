@@ -10,3 +10,5 @@ date: "2021-10-27"
 | ----------- | ----------- |
 📚 Definition: | Turkish military officer  
 🗣 Pronunciation: | Yusbakshi
+
+- via Random Words API
