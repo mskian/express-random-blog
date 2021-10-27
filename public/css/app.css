@@ -178,6 +178,11 @@ table {
    text-rendering: optimizelegibility !important;
    border-bottom:2px solid #bbb !important;background-color:#d3d3d3
 }
+table{
+    width:100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+ }
 th {
    white-space: nowrap;
 }
