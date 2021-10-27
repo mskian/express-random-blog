@@ -1,0 +1,35 @@
+{
+  "name": "express-random-blog",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Just a Random blog - Share a thing that I Collect from the unicorn world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "blog",
+    "random"
+  ],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskian/express-random-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mskian/express-random-blog/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^12.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
