@@ -6,9 +6,17 @@ Just a Random blog - Share a thing that I Collect from the unicorn world.
 
 its Just for Learing Purpose and Automation Blog Posts.
 
-> Post Markdown Content via API - Experimenting automation blog content Posting
+> Post Markdown Content via Github API - Experimenting automation blog content Posting
 
-## installation
+## Requirements ⚙
+
+- Node.js
+- EXpress.js
+- EJS Template Engine
+- Gray Matter - Read Markdown File
+- markdown-it - Render the Markdown Content
+
+## installation 📦
 
 - clone the repo or download
 
@@ -25,12 +33,17 @@ yarn dev
 ```
 
 - Post Markdown Content on `/blog/content/`
-- Access post
+- Access post `http://localhost:4002/<markdown-file-name>`
 
 ```sh
 http://localhost:4001/first-post
 ```
 
-## LICENSE
+## Reference 📑
+
+- Creating a Markdown Blog with EJS & Express - <https://dev.to/khalby786/creating-a-markdown-blog-with-ejs-express-j40>
+- Example - <https://github.com/Pilavcioglu/markdown-blog>
+
+## LICENSE ☑
 
 MIT
