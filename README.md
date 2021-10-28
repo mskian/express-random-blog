@@ -1,12 +1,12 @@
 # Random Blog 🦄
 
-Just a Random blog - Share a thing that I Collect from the unicorn world.
+Just a Random blog - Share a thing that I Collect from the unicorn world.  
 
 > Build using Express.js and EJS
 
-its Just for Learing Purpose and Automation Blog Posts.
+its Just for Learing Purpose and Automation Blog Posts.  
 
-> Post Markdown Content via Github API - Experimenting automation blog content Posting
+> Post Markdown Content via Github API - Experimenting automation blog content Posting  
 
 ## Requirements ⚙
 
@@ -33,10 +33,12 @@ yarn dev
 ```
 
 - Post Markdown Content on `/blog/content/`
+- `ejs` Template files on `/blog/` Folder
+- Asset files on `/public/` Folder
 - Access post `http://localhost:4002/<markdown-file-name>`
 
 ```sh
-http://localhost:4001/first-post
+http://localhost:4002/first-post
 ```
 
 ## Reference 📑
