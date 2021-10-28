@@ -4,9 +4,9 @@ description: "This the First Post of this Blog."
 date: "2021-10-20"
 ---
 
-First Post the blog  
+First Post the blog
 
-Build using  
+Build using
 
 - Nodejs
 - EXpress.js

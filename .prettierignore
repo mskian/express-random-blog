@@ -1,0 +1,16 @@
+.cache
+package.json
+package-lock.json
+yarn.lock
+public
+build
+dist
+index.js
+node_modules
+
+# Ignore files:
+*.html
+*.css
+*.js
+*.ejs
+*.json
