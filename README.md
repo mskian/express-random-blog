@@ -4,7 +4,7 @@ Just a Random blog - Share a thing that I Collect from the unicorn world.
 
 > Build using Express.js and EJS
 
-its Just for Learing Purpose and Automation Blog Posts.  
+its Just for Learing Purpose and Automation Blogging site.  
 
 > Post Markdown Content via Restful API and Github API - Experimenting automation blog content Posting  
 
