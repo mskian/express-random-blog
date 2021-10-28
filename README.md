@@ -6,7 +6,7 @@ Just a Random blog - Share a thing that I Collect from the unicorn world.
 
 its Just for Learing Purpose and Automation Blog Posts.  
 
-> Post Markdown Content via Github API - Experimenting automation blog content Posting  
+> Post Markdown Content via Restful API and Github API - Experimenting automation blog content Posting  
 
 ## Requirements ⚙
 
