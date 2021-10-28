@@ -2,11 +2,11 @@ const express = require('express');
 const matter = require('gray-matter');
 const md = require("markdown-it")();
 const fs = require('fs')
-//const apicache = require("apicache");
+const apicache = require("apicache");
 
 const app = express();
 const port = 4002;
-//const cache = apicache.middleware
+const cache = apicache.middleware
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -21,7 +21,7 @@ app.listen(port, function() {
     console.log('listening on port ' + port);
 });
 
-app.get('/', function(req, res) {
+app.get('/', cache('1 hour'), function(req, res) {
 
     res.header('X-Frame-Options', 'DENY');
     res.header('X-XSS-Protection', '1; mode=block');
@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
 
 });
 
-app.get("/:article", (req, res) => {
+app.get("/:article", cache('1 hour'), (req, res) => {
 
     res.header('X-Frame-Options', 'DENY');
     res.header('X-XSS-Protection', '1; mode=block');

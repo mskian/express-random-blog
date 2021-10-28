@@ -23,6 +23,7 @@
     "url": "https://github.com/mskian/express-random-blog/issues"
   },
   "dependencies": {
+    "apicache": "^1.6.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
