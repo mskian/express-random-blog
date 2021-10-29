@@ -59,7 +59,7 @@ app.get('/:article', cache('1 hour'), (req, res) => {
             title: file.data.title || 'Post title Comes Here',
             description: file.data.description || 'Hello World - Post title description Here',
             date: file.data.date || formattedDate,
-            seourl: req.params.article || ''
+            seourl: req.params.article || '',
         });
     } else {
         res.render('404');
