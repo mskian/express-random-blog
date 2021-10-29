@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "minify-ejs": "gulp minify-ejs",
+    "minify-css": "gulp minify-css"
   },
   "keywords": [
     "blog",
@@ -31,6 +33,9 @@
     "markdown-it": "^12.2.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
     "nodemon": "^2.0.14",
     "prettier": "^2.4.1"
   }

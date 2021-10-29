@@ -15,6 +15,7 @@ its Just for Learing Purpose and Automation Blogging site.
 - EJS Template Engine
 - Gray Matter - Read Markdown File
 - markdown-it - Render the Markdown Content
+- Gulp.js for Optimization and Automated Tasks
 
 ## installation 📦
 
@@ -33,12 +34,30 @@ yarn dev
 ```
 
 - Post Markdown Content on `/blog/content/`
-- `ejs` Template files on `/blog/` Folder
+- `ejs` Template files on `/templates/` Folder
 - Asset files on `/public/` Folder
 - Access post `http://localhost:4002/<markdown-file-name>`
 
 ```sh
 http://localhost:4002/first-post
+```
+
+- Format markdown content
+
+```sh
+yarn format
+```
+
+- Miinify `ejs` Template after Edits/Modifications - Main file localtion `/templates`
+
+```sh
+yarn minify-ejs
+```
+
+- Miinify `css` file after Edits/Modifications - Main file localtion `/public/css`
+
+```sh
+yarn minify-css
 ```
 
 ## Reference 📑
