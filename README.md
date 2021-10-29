@@ -1,8 +1,8 @@
 # Random Blog 🦄
 
-Just a Random blog - Share a thing that I Collect from the unicorn world.
+Creating a Markdown Blog with EJS and Express.js - Just a Random blog - Share a thing that I Collect from the unicorn world.
 
-> Build using Express.js and EJS
+> Build using Express.js and EJS - Express Markdown Blog
 
 its Just for Learing Purpose and Automation Blogging site.
 
