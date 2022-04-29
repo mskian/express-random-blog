@@ -36,10 +36,10 @@ yarn dev
 - Post Markdown Content on `/blog/content/`
 - `ejs` Template files on `/templates/` Folder
 - Asset files on `/public/` Folder
-- Access post `http://localhost:4002/<markdown-file-name>`
+- Access post `http://localhost:4003/<markdown-file-name>`
 
 ```sh
-http://localhost:4002/first-post
+http://localhost:4003/first-post
 ```
 
 - Format markdown content
