@@ -16,6 +16,7 @@ its Just for Learing Purpose and Automation Blogging site.
 - Gray Matter - Read Markdown File
 - markdown-it - Render the Markdown Content
 - Gulp.js for Optimization and Automated Tasks
+- Tailwind CSS
 
 ## installation 📦
 

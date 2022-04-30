@@ -10,4 +10,6 @@ date: "2021-10-27"
 | 📚 Definition:   | Yellow-skinned person |
 | 🗣 Pronunciation: | Santhoterm            |
 
+&nbsp;
+
 - via Random Words API

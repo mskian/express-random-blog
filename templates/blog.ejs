@@ -33,26 +33,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="/build/css/app.css">
+<link rel="stylesheet" type="text/css" href="/build/css/template.css">
 <link rel="manifest" href="/manifest.json">
 
 </head>
 <body>
 
-<main>
-<article>
-<h1 class="post-headline"><%= title %></h1>
+<div class="min-h-screen bg-white-200">
+<div class="container mx-auto px-5">
+<div class="flex items-center justify-center">
+<br />
+<div class="bg-white rounded-2xl border shadow-xl p-10 max-w-lg mt-6">
+<h1 class="font-medium leading-tight text-3xl mt-0 mb-2 text-blue-600"><%= title %></h1>
 <hr>
-<p class="meta">📝 Updated at: <%= date %></p>
+<code>📝 Updated at: <%= date %></code>
+<hr>
+<br />
 <%- post %>
 <br />
-</article>
-</main>
 <hr>
+</div>
+</div>
 <br />
-
-<p class="copy"><code>Build using Express.js and Ejs</code></p>
-
-<br />
+</div>
+</div>
 
 </body>
 </html>
