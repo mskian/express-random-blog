@@ -37,7 +37,10 @@ app.get('/', cache('1 hour'), function(req, res) {
     res.header('X-XSS-Protection', '1; mode=block');
     res.header('X-Content-Type-Options', 'nosniff');
     res.header('Strict-Transport-Security', 'max-age=63072000');
-    res.render('index')
+
+    const current_page = 'https://' + req.headers.host + req.url;
+
+    res.render('index', {seourl: current_page || '/',})
 
 });
 
@@ -47,6 +50,8 @@ app.get('/:article', cache('1 hour'), (req, res) => {
     res.header('X-XSS-Protection', '1; mode=block');
     res.header('X-Content-Type-Options', 'nosniff');
     res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const current_page = 'https://' + req.headers.host + req.url;
 
     const getfile = (__dirname + '/blog/content/' + req.params.article + '.md')
     if (fs.existsSync(getfile)) {
@@ -59,7 +64,7 @@ app.get('/:article', cache('1 hour'), (req, res) => {
             title: file.data.title || 'Post title Comes Here',
             description: file.data.description || 'Hello World - Post title description Here',
             date: file.data.date || formattedDate,
-            seourl: req.params.article || '',
+            seourl: current_page || '',
         });
     } else {
         res.render('404');
