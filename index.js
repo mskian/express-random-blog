@@ -1,12 +1,22 @@
 const express = require('express');
 const matter = require('gray-matter');
-const md = require('markdown-it')();
+const md = require('markdown-it')({
+    html: true,
+    linkify: true,
+    breaks: true,
+    typographer: true});
 const fs = require('fs')
 const apicache = require('apicache');
+const createDOMPurify = require('dompurify');
+const {
+    JSDOM
+} = require('jsdom');
 
 const app = express();
 const port = 4003;
 const cache = apicache.middleware
+const window = new JSDOM('').window;
+const DOMPurify = createDOMPurify(window);
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -60,10 +70,11 @@ app.get('/:article', cache('1 hour'), (req, res) => {
         const content = file.content;
         const result = md.render(content);
         res.render('blog', {
-            post: result || 'Hello Word Post Content Here',
-            title: file.data.title || 'Post title Comes Here',
-            description: file.data.description || 'Hello World - Post title description Here',
+            post: DOMPurify.sanitize(result) || 'Hello Word Post Content Here',
+            title: DOMPurify.sanitize(file.data.title) || 'Post title Comes Here',
+            description: DOMPurify.sanitize(file.data.description) || 'Hello World - Post title description Here',
             date: file.data.date || formattedDate,
+            author: DOMPurify.sanitize(file.data.author) || 'unknown',
             seourl: current_page || '',
         });
     } else {
