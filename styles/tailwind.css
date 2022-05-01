@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,3 +9,44 @@
       list-style: square;
     }
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(106, 9, 231, 0.302);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(247, 18, 189, 0.5);
+}
+body{
+    font-family: 'Anek Tamil', sans-serif;
+    text-rendering:optimizeLegibility;
+}
+table{
+    width:100%;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+ }
+th {
+   white-space: nowrap;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid rgb(19, 13, 13);
+    overflow-wrap: break-word;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+tr:nth-child(even){background-color: #fcda46}

@@ -1,6 +1,6 @@
-# Random Blog 🦄
+# ரண்டொம் வேர்ல்ட் 🦄
 
-Creating a Markdown Blog with EJS and Express.js - Just a Random blog - Share a thing that I Collect from the unicorn world.
+Creating a Markdown Blog with EJS and Express.js - Just a ரண்டொம் வேர்ல்ட் - Share a thing that I Collect from the யுனிகான் வேர்ல்ட்.
 
 > Build using Express.js and EJS - Express Markdown Blog
 
