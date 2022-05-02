@@ -8,15 +8,19 @@ its Just for Learing Purpose and Automation Blogging site.
 
 > Post Markdown Content via Restful API and Github API - Experimenting automation blog content Posting
 
+- Post Demo - <https://random.tamilwords.net/fb-kavithai-3042918/>
+
 ## Requirements ⚙
 
 - Node.js
-- EXpress.js
+- Express.js
 - EJS Template Engine
 - Gray Matter - Read Markdown File
 - markdown-it - Render the Markdown Content
 - Gulp.js for Optimization and Automated Tasks
 - Tailwind CSS
+- apicache - <https://github.com/kwhitley/apicache>
+- dompurify - <https://github.com/cure53/DOMPurify>
 
 ## installation 📦
 
