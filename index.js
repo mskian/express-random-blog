@@ -82,6 +82,19 @@ app.get('/:article', cache('1 hour'), (req, res) => {
     }
 });
 
+app.get('/archive/posts', cache('1 hour'), function(req, res) {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const current_page = 'https://' + req.headers.host + req.url;
+
+    res.render('posts', {seourl: current_page || '/',})
+
+});
+
 app.use('/', function(req, res) {
     res.render('404');
 });

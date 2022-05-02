@@ -34,7 +34,10 @@ table{
    text-rendering: optimizelegibility !important;
  }
 th {
-   white-space: nowrap;
+   overflow-wrap: break-word;
+}
+tr {
+  overflow-wrap: break-word;
 }
 table {
     border-collapse: collapse;
@@ -49,4 +52,38 @@ th, td {
 table, th, td {
     border: 1px solid black;
 }
-tr:nth-child(even){background-color: #fcda46}
+table thead tr,
+table tfoot tr{
+  background: rgba(0,0,0,0.2);  
+}
+table tbody tr {
+  background: rgba(231, 3, 3, 0.08);  
+}
+table tr>th {
+  text-align: left;
+}
+table tr>th, tr>td {
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 10px 15px;
+}
+#pagination {
+  display: block;
+  padding:10px;
+  text-align:center;
+}
+#pagination > a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-right: 0;
+  background-color: #7bff0014;
+  color: #000;
+  font-weight: 600;
+}
+#pagination > a:last-child {
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+#pagination > a:hover {
+  color: #FB3C00;
+}

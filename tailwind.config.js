@@ -3,6 +3,7 @@ module.exports = {
     "./templates/**/*.ejs",
     "./views/**/*.ejs",
     "./public/build/**/*.css",
+    "./public/js/**/*.js",
   ],
   theme: {
     extend: {},
