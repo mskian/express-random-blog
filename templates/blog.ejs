@@ -27,6 +27,12 @@
 <title><%= title %></title>
 <meta name="description" content="<%= description %>"/>
 <link rel="canonical" href="<%= seourl %>" />
+<meta property="og:image" content="<%= mainurl %>randomkavithai.png" />
+<meta property="og:image:secure_url" content="<%= mainurl %>randomkavithai.png" />
+<meta property="og:image:alt" content="Tamil kavithai" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +40,55 @@
 
 <link rel="stylesheet" type="text/css" href="/build/css/template.css">
 <link rel="manifest" href="/manifest.json">
+
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "publisher": {
+          "@type": "Organization",
+          "name": "<%= title %>",
+          "url": "<%= mainurl %>",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "<%= mainurl %>icons/Icon-72.png",
+              "width": 72,
+              "height": 72
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Editorial Staff",
+          "image": {
+              "@type": "ImageObject",
+              "url": "//www.gravatar.com/avatar/a3425a2c334972ab5dde3c218307cbdd?s=250&d=mm&r=x",
+              "width": 250,
+              "height": 250
+          },
+          "url": "<%= mainurl %>",
+          "sameAs": [
+              "https://www.facebook.com/tamilsmsblog",
+              "https://twitter.com/tamilsmsblog"
+          ]
+      },
+      "headline": "<%= title %>",
+      "url": "<%= seourl %>",
+      "datePublished": "<%= seodate %>",
+      "dateModified": "<%= seodate %>",
+      "image": {
+          "@type": "ImageObject",
+          "url": "<%= mainurl %>randomkavithai.jpg",
+          "width": 1200,
+          "height": 627
+      },
+      "keywords": "<%= keywords %>",
+      "description": "<%= description %>",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "<%= mainurl %>"
+      }
+  }
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha256-6H5VB5QyLldKH9oMFUmjxw2uWpPZETQXpCkBaDjquMs=" crossorigin="anonymous"></script>
 

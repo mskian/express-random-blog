@@ -61,6 +61,7 @@ app.get('/:article', cache('1 hour'), (req, res) => {
     res.header('X-Content-Type-Options', 'nosniff');
     res.header('Strict-Transport-Security', 'max-age=63072000');
 
+    const homepage = 'https://' + req.headers.host + '/';
     const current_page = 'https://' + req.headers.host + req.url;
 
     const getfile = (__dirname + '/blog/content/' + req.params.article + '.md')
@@ -73,12 +74,14 @@ app.get('/:article', cache('1 hour'), (req, res) => {
             post: DOMPurify.sanitize(result) || 'Hello Word Post Content Here',
             title: DOMPurify.sanitize(file.data.title) || 'Post title Comes Here',
             description: DOMPurify.sanitize(file.data.description) || 'Hello World - Post title description Here',
-            date: file.data.date || formattedDate,
+            seodate: file.data.date || formattedDate,
+            date: new Date(file.data.date).toDateString() || formattedDate,
             author: DOMPurify.sanitize(file.data.author) || 'unknown',
             seourl: current_page || '',
             filename : req.params.article || 'fb-kavithai-image',
             tag: DOMPurify.sanitize(file.data.tag.replace(/ /g,'').toLowerCase()) || 'tamilsms',
-            keywords: DOMPurify.sanitize(file.data.tag) || 'Tamil Kavithai'
+            keywords: DOMPurify.sanitize(file.data.tag) || 'Tamil Kavithai',
+            mainurl: homepage || ''
         });
     } else {
         res.render('404');

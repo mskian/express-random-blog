@@ -1,4 +1,49 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#ffffff"><link rel="shortcut icon" href="/icons/Icon-48.png" type="image/png"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Kavithai image"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white-translucent"><meta name="apple-mobile-web-app-title" content="Kavithai image"><meta name="HandheldFriendly" content="True"><link rel="apple-touch-icon" sizes="48x48" href="/icons/Icon-48.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons/Icon-72.png"><link rel="apple-touch-icon" sizes="96x96" href="/icons/Icon-96.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons/Icon-144.png"><link rel="apple-touch-icon" sizes="192x192" href="/icons/Icon-192.png"><link rel="apple-touch-icon" sizes="256x256" href="/icons/Icon-256.png"><link rel="apple-touch-icon" sizes="512x512" href="/icons/Icon-512.png"><title><%= title %></title><meta name="description" content="<%= description %>"><link rel="canonical" href="<%= seourl %>"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="/build/css/template.css"><link rel="manifest" href="/manifest.json"><script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha256-6H5VB5QyLldKH9oMFUmjxw2uWpPZETQXpCkBaDjquMs=" crossorigin="anonymous"></script></head><body><div class="min-h-screen bg-gray-100"><div class="container mx-auto px-5"><br><br><div class="flex items-center justify-center"><h1 class="font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600"><%= title %></h1></div><code class="flex items-center justify-center font-bold"><small>📝 Updated at: <%= date %></small></code><br><div class="flex items-center justify-center"><div id="copy-quote"><div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-1xl"><div class="block p-6 bg-white sm:p-8 rounded-xl"><code data-html2canvas-ignore="true"><small class="font-medium">📝 Content by: <%= author %></small></code><br><br> <%- post %> <br><br><span class="flex items-center justify-center"><span class="text-[15px] font-medium">#<%= tag %></span></span></div></div></div><br></div><br><!--<div class="flex items-center justify-center" id="btn-img" >
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#ffffff"><link rel="shortcut icon" href="/icons/Icon-48.png" type="image/png"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Kavithai image"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white-translucent"><meta name="apple-mobile-web-app-title" content="Kavithai image"><meta name="HandheldFriendly" content="True"><link rel="apple-touch-icon" sizes="48x48" href="/icons/Icon-48.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons/Icon-72.png"><link rel="apple-touch-icon" sizes="96x96" href="/icons/Icon-96.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons/Icon-144.png"><link rel="apple-touch-icon" sizes="192x192" href="/icons/Icon-192.png"><link rel="apple-touch-icon" sizes="256x256" href="/icons/Icon-256.png"><link rel="apple-touch-icon" sizes="512x512" href="/icons/Icon-512.png"><title><%= title %></title><meta name="description" content="<%= description %>"><link rel="canonical" href="<%= seourl %>"><meta property="og:image" content="<%= mainurl %>randomkavithai.png"><meta property="og:image:secure_url" content="<%= mainurl %>randomkavithai.png"><meta property="og:image:alt" content="Tamil kavithai"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="/build/css/template.css"><link rel="manifest" href="/manifest.json"><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "publisher": {
+          "@type": "Organization",
+          "name": "<%= title %>",
+          "url": "<%= mainurl %>",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "<%= mainurl %>icons/Icon-72.png",
+              "width": 72,
+              "height": 72
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Editorial Staff",
+          "image": {
+              "@type": "ImageObject",
+              "url": "//www.gravatar.com/avatar/a3425a2c334972ab5dde3c218307cbdd?s=250&d=mm&r=x",
+              "width": 250,
+              "height": 250
+          },
+          "url": "<%= mainurl %>",
+          "sameAs": [
+              "https://www.facebook.com/tamilsmsblog",
+              "https://twitter.com/tamilsmsblog"
+          ]
+      },
+      "headline": "<%= title %>",
+      "url": "<%= seourl %>",
+      "datePublished": "<%= seodate %>",
+      "dateModified": "<%= seodate %>",
+      "image": {
+          "@type": "ImageObject",
+          "url": "<%= mainurl %>randomkavithai.jpg",
+          "width": 1200,
+          "height": 627
+      },
+      "keywords": "<%= keywords %>",
+      "description": "<%= description %>",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "<%= mainurl %>"
+      }
+  }</script><script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha256-6H5VB5QyLldKH9oMFUmjxw2uWpPZETQXpCkBaDjquMs=" crossorigin="anonymous"></script></head><body><div class="min-h-screen bg-gray-100"><div class="container mx-auto px-5"><br><br><div class="flex items-center justify-center"><h1 class="font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600"><%= title %></h1></div><code class="flex items-center justify-center font-bold"><small>📝 Updated at: <%= date %></small></code><br><div class="flex items-center justify-center"><div id="copy-quote"><div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-1xl"><div class="block p-6 bg-white sm:p-8 rounded-xl"><code data-html2canvas-ignore="true"><small class="font-medium">📝 Content by: <%= author %></small></code><br><br> <%- post %> <br><br><span class="flex items-center justify-center"><span class="text-[15px] font-medium">#<%= tag %></span></span></div></div></div><br></div><br><!--<div class="flex items-center justify-center" id="btn-img" >
 <button class="font-bold inline-block px-12 py-3 text-sm font-medium text-white bg-purple-600 border border-indigo-600 rounded active:text-indigo-500" onclick="capture()">Generate image</button>
 </div>--><div id="result"></div><br></div></div><script>html2canvas(document.getElementById("copy-quote"), {
   allowTaint: true,
