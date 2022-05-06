@@ -1,6 +1,6 @@
-# ரண்டொம் வேர்ல்ட் 🦄
+# ரண்டொம் கவிதை வேர்ல்ட் 🦄
 
-Creating a Markdown Blog with EJS and Express.js - Just a ரண்டொம் வேர்ல்ட் - Share a thing that I Collect from the யுனிகான் வேர்ல்ட்.
+Creating a Markdown Blog with EJS and Express.js - Download the Latest Tamil kavithai images for your Social Status and Stories - kavithai collected Around from the internet and Social profiles.
 
 > Build using Express.js and EJS - Express Markdown Blog
 
@@ -21,6 +21,7 @@ its Just for Learing Purpose and Automation Blogging site.
 - Tailwind CSS
 - apicache - <https://github.com/kwhitley/apicache>
 - dompurify - <https://github.com/cure53/DOMPurify>
+- html2canvas (convert Post into image) - <https://github.com/niklasvh/html2canvas>
 
 ## installation 📦
 

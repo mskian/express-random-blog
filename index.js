@@ -76,6 +76,7 @@ app.get('/:article', cache('1 hour'), (req, res) => {
             date: file.data.date || formattedDate,
             author: DOMPurify.sanitize(file.data.author) || 'unknown',
             seourl: current_page || '',
+            filename : req.params.article || 'fb-kavithai-image'
         });
     } else {
         res.render('404');

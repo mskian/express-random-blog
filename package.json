@@ -2,7 +2,7 @@
   "name": "express-random-blog",
   "version": "0.0.1",
   "private": true,
-  "description": "Just a Random blog - Share a thing that I Collect from the unicorn world.",
+  "description": "Download the Latest Tamil kavithai images for your Social Status and Stories - kavithai collected Around from the internet and Social profiles.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,7 +31,7 @@
     "apicache": "^1.6.3",
     "dompurify": "^2.3.6",
     "ejs": "^3.1.7",
-    "express": "^4.18.0",
+    "express": "^4.18.1",
     "gray-matter": "^4.0.3",
     "jsdom": "^19.0.0",
     "markdown-it": "^13.0.0"
