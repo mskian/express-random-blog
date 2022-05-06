@@ -12,7 +12,8 @@
     "minify-ejs": "gulp minify-ejs",
     "minify-css": "npm run build:css && gulp minify-css",
     "build:css": "tailwindcss -m -i ./styles/tailwind.css -o public/build/css/template.css",
-    "dev:css": "tailwindcss -w -i ./styles/tailwind.css -o public/build/css/template.css"
+    "dev:css": "tailwindcss -w -i ./styles/tailwind.css -o public/build/css/template.css",
+    "newpost": "node scripts/post.js"
   },
   "keywords": [
     "blog",
