@@ -99,25 +99,23 @@
 <div class="container mx-auto px-5">
 <br />
 <br />
-<div class="flex items-center justify-center">
-<h1 class="font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600"><%= title %></h1>
-</div>
+<h1 class="flex items-center justify-center font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600"><%= title %></h1>
 <code class="flex items-center justify-center font-bold"><small>📝 Updated at: <%= date %></small></code>
 <br />
 <div class="flex items-center justify-center">
 <div id="copy-quote">
 <div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-1xl">
-<div class="block p-6 bg-white sm:p-8 rounded-xl">
+<div class="p-10 m-1 bg-white rounded">
 <code data-html2canvas-ignore="true"><small class="font-medium">📝 Content by: <%= author %></small></code>
 <br />
 <br />
-<div class="text-[15px] leading-relaxed font-medium">
+<div class="text-[13px] leading-relaxed font-medium text-center">
 <%- post %>
 </div>
 <br />
 <br />
 <span class="flex items-center justify-center">
-<span class="text-[15px] font-medium">#<%= tag %></span>
+<span class="text-[12px] font-medium">#<%= tag %></span>
 </span>
 </div>
 </div>
@@ -137,6 +135,7 @@
 html2canvas(document.getElementById("copy-quote"), {
   allowTaint: true,
   useCORS: true,
+  scale: 1,
 })
 .then(function (canvas) {
   //document.getElementById("btn-img").style.display = "none";
