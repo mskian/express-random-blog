@@ -76,7 +76,9 @@ app.get('/:article', cache('1 hour'), (req, res) => {
             date: file.data.date || formattedDate,
             author: DOMPurify.sanitize(file.data.author) || 'unknown',
             seourl: current_page || '',
-            filename : req.params.article || 'fb-kavithai-image'
+            filename : req.params.article || 'fb-kavithai-image',
+            tag: DOMPurify.sanitize(file.data.tag.replace(/ /g,'').toLowerCase()) || 'tamilsms',
+            keywords: DOMPurify.sanitize(file.data.tag) || 'Tamil Kavithai'
         });
     } else {
         res.render('404');
