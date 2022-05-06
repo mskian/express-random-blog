@@ -109,13 +109,13 @@
 <code data-html2canvas-ignore="true"><small class="font-medium">📝 Content by: <%= author %></small></code>
 <br />
 <br />
-<div class="text-[13px] leading-relaxed font-medium text-center">
+<div class="text-[14px] leading-relaxed font-medium text-center">
 <%- post %>
 </div>
 <br />
 <br />
 <span class="flex items-center justify-center">
-<span class="text-[12px] font-medium">#<%= tag %></span>
+<span class="text-[13px] font-medium">#<%= tag %></span>
 </span>
 </div>
 </div>
@@ -135,7 +135,6 @@
 html2canvas(document.getElementById("copy-quote"), {
   allowTaint: true,
   useCORS: true,
-  scale: 1,
 })
 .then(function (canvas) {
   //document.getElementById("btn-img").style.display = "none";
