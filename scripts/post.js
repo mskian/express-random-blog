@@ -11,6 +11,7 @@ description: ""
 author: ""
 date: "${currentDateTime}"
 tag: ""
+slug: "${basename}"
 ---
 `
 

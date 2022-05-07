@@ -4,6 +4,7 @@ description: "வழிய போய் பேசும்போது அலட
 author: "Shiva Chelliah"
 date: "2022-05-06T10:50:27.209Z"
 tag: "Tamil Facts"
+slug: "fb-kavithai-3042918"
 ---
 
 வழிய போய் பேசும்போது  

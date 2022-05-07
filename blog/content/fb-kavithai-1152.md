@@ -4,6 +4,7 @@ description: "காலம் கை விட்டு போகிறது �
 author: "Shiva Chelliah"
 date: "2022-05-07T04:25:01.108Z"
 tag: "Tamil Life Quotes"
+slug: "fb-kavithai-1152"
 ---
 
 காலம்  

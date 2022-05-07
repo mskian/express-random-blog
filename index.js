@@ -135,6 +135,33 @@ app.get('/lyrics/:article', cache('1 hour'), (req, res) => {
     }
 });
 
+app.get("/api/posts", (req, res) => {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const homepage = 'https://' + req.headers.host + '/';
+
+    postsDir = __dirname + '/blog/content/';
+    const post_data = []
+    let post = fs.readdirSync(__dirname + '/blog/content').filter(file => file.endsWith('.md'));
+    post.sort(function(a){
+        post_data.push({
+            title: matter.read(postsDir+a).data.title || 'title',
+            description: matter.read(postsDir+a).data.description || 'description',
+            content: matter.read(postsDir+a).content || 'content',
+            date: matter.read(postsDir+a).data.date || 'date',
+            author: matter.read(postsDir+a).data.author || 'author',
+            tag: matter.read(postsDir+a).data.tag || 'tag',
+            slug: matter.read(postsDir+a).data.slug || '/slug',
+            liveurl: homepage + matter.read(postsDir+a).data.slug + '/' || '/slug',
+        });
+    })
+    res.json({ 'posts': post_data });
+  });
+
 app.use('/', function(req, res) {
     res.render('404');
 });

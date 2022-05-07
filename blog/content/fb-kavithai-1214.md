@@ -4,6 +4,7 @@ description: "சில நேரங்களில் கடந்து வந
 author: "Shiva Chelliah"
 date: "2022-05-06T11:46:55.661Z"
 tag: "Thanimai"
+slug: "fb-kavithai-1214"
 ---
 
 சில நேரங்களில் கடந்து வந்த  

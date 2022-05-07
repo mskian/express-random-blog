@@ -4,6 +4,7 @@ description: "அவங்க இந்நேரம் நம்மள நின
 author: "Shiva Chelliah"
 date: "2022-05-07T04:11:27.440Z"
 tag: "Tamil Life Quotes"
+slug: "fb-kavithai-8697"
 ---
 
 அவங்க இந்நேரம்  
