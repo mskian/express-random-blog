@@ -5,8 +5,7 @@ const dataSet = [{
   "date": "2022-05-06T11:46:55.661Z",
   "author": "Shiva Chelliah",
   "tag": "Thanimai",
-  "slug": "fb-kavithai-1214",
-  "liveurl": "https://localhost:4003/fb-kavithai-1214/"
+  "slug": "fb-kavithai-1214"
 }, {
   "title": "வழிய போய் பேசும்போது",
   "description": "வழிய போய் பேசும்போது அலட்சியம் செய்யாமல் பேசுபவர்களையும், கொஞ்சம் வேலை இருக்கு முடிச்சுட்டு நானே மெசேஜ் பண்ணுறேன்னு சொல்லிட்டு.",
@@ -14,8 +13,7 @@ const dataSet = [{
   "date": "2022-05-06T10:50:27.209Z",
   "author": "Shiva Chelliah",
   "tag": "Tamil Facts",
-  "slug": "fb-kavithai-3042918",
-  "liveurl": "https://localhost:4003/fb-kavithai-3042918/"
+  "slug": "fb-kavithai-3042918"
 }, {
   "title": "சுயநலமாக இருப்பது யாருக்கு",
   "description": "சுயநலமாக இருப்பது யாருக்கு நன்மையோ இல்லையோ சில நேரங்களில் நமக்கு பெரிய நன்மை.",
@@ -23,8 +21,7 @@ const dataSet = [{
   "date": "2022-05-06T10:50:57.864Z",
   "author": "Shiva Chelliah",
   "tag": "Tamil Life Quotes",
-  "slug": "fb-kavithai-3044109",
-  "liveurl": "https://localhost:4003/fb-kavithai-3044109/"
+  "slug": "fb-kavithai-3044109"
 }, {
   "title": "அறியாமை தான் இங்கு பலரின் மிகப்பெரிய பலவீனம்",
   "description": "அவங்க இந்நேரம் நம்மள நினைச்சுட்டு இருப்பாங்களன்னு நம்மள நாமே சமாதானம் செய்து கொள்ளும் அறியாமை தான் இங்கு பலரின் மிகப்பெரிய பலவீனம்.",
@@ -32,8 +29,7 @@ const dataSet = [{
   "date": "2022-05-07T04:11:27.440Z",
   "author": "Shiva Chelliah",
   "tag": "Tamil Life Quotes",
-  "slug": "fb-kavithai-8697",
-  "liveurl": "https://localhost:4003/fb-kavithai-8697/"
+  "slug": "fb-kavithai-8697"
 }, {
   "title": "ஏதேனும் ஒரு வெறுமை நிலையே",
   "description": "பிரியமானவர்கள் கொடுத்து சென்ற ஏதேனும் ஒரு வெறுமை நிலையே மனிதனை மிருகமாய் மாற்றுகிறது.",
@@ -41,8 +37,7 @@ const dataSet = [{
   "date": "2022-05-06T12:13:04.578Z",
   "author": "Shiva Chelliah",
   "tag": "Tamil Facts",
-  "slug": "fb-kavithai-8752",
-  "liveurl": "https://localhost:4003/fb-kavithai-8752/"
+  "slug": "fb-kavithai-8752"
 }]
 
 const displayPageNav = perPage => {

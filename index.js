@@ -142,8 +142,6 @@ app.get("/api/posts", (req, res) => {
     res.header('X-Content-Type-Options', 'nosniff');
     res.header('Strict-Transport-Security', 'max-age=63072000');
 
-    const homepage = 'https://' + req.headers.host + '/';
-
     postsDir = __dirname + '/blog/content/';
     const post_data = []
     let post = fs.readdirSync(__dirname + '/blog/content').filter(file => file.endsWith('.md'));
@@ -156,7 +154,6 @@ app.get("/api/posts", (req, res) => {
             author: matter.read(postsDir+a).data.author || 'author',
             tag: matter.read(postsDir+a).data.tag || 'tag',
             slug: matter.read(postsDir+a).data.slug || '/slug',
-            liveurl: homepage + matter.read(postsDir+a).data.slug + '/' || '/slug',
         });
     })
     res.json({ 'posts': post_data });
