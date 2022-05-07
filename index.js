@@ -101,6 +101,40 @@ app.get('/archive/posts', cache('1 hour'), function(req, res) {
 
 });
 
+app.get('/lyrics/:article', cache('1 hour'), (req, res) => {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const homepage = 'https://' + req.headers.host + '/';
+    const current_page = 'https://' + req.headers.host + req.url;
+
+    const getfile = (__dirname + '/blog/lyrics/' + req.params.article + '.md')
+    if (fs.existsSync(getfile)) {
+
+        const file = matter.read(__dirname + '/blog/lyrics/' + req.params.article + '.md');
+        const content = file.content;
+        const result = md.render(content);
+        res.render('lyrics', {
+            post: DOMPurify.sanitize(result) || 'Hello Word Post Content Here',
+            title: DOMPurify.sanitize(file.data.title) || 'Post title Comes Here',
+            description: DOMPurify.sanitize(file.data.description) || 'Hello World - Post title description Here',
+            seodate: file.data.date || formattedDate,
+            date: new Date(file.data.date).toDateString() || formattedDate,
+            author: DOMPurify.sanitize(file.data.author) || 'unknown',
+            seourl: current_page || '',
+            filename : req.params.article || 'tamil-song-lyrics',
+            tag: DOMPurify.sanitize(file.data.tag.replace(/ /g,'').toLowerCase()) || 'tamilsms',
+            keywords: DOMPurify.sanitize(file.data.tag) || 'Tamil Lyrics',
+            mainurl: homepage || ''
+        });
+    } else {
+        res.render('404');
+    }
+});
+
 app.use('/', function(req, res) {
     res.render('404');
 });

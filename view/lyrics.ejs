@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#ffffff"><link rel="shortcut icon" href="/icons/Icon-48.png" type="image/png"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Kavithai image"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white-translucent"><meta name="apple-mobile-web-app-title" content="Kavithai image"><meta name="HandheldFriendly" content="True"><link rel="apple-touch-icon" sizes="48x48" href="/icons/Icon-48.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons/Icon-72.png"><link rel="apple-touch-icon" sizes="96x96" href="/icons/Icon-96.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons/Icon-144.png"><link rel="apple-touch-icon" sizes="192x192" href="/icons/Icon-192.png"><link rel="apple-touch-icon" sizes="256x256" href="/icons/Icon-256.png"><link rel="apple-touch-icon" sizes="512x512" href="/icons/Icon-512.png"><title><%= title %></title><meta name="description" content="<%= description %>"><link rel="canonical" href="<%= seourl %>"><meta property="og:image" content="<%= mainurl %>randomkavithai.png"><meta property="og:image:secure_url" content="<%= mainurl %>randomkavithai.png"><meta property="og:image:alt" content="Tamil kavithai"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="stylesheet" type="text/css" href="/build/css/template.css"><link rel="manifest" href="/manifest.json"><script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "publisher": {
+          "@type": "Organization",
+          "name": "<%= title %>",
+          "url": "<%= mainurl %>",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "<%= mainurl %>icons/Icon-72.png",
+              "width": 72,
+              "height": 72
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Editorial Staff",
+          "image": {
+              "@type": "ImageObject",
+              "url": "//www.gravatar.com/avatar/a3425a2c334972ab5dde3c218307cbdd?s=250&d=mm&r=x",
+              "width": 250,
+              "height": 250
+          },
+          "url": "<%= mainurl %>",
+          "sameAs": [
+              "https://www.facebook.com/tamilsmsblog",
+              "https://twitter.com/tamilsmsblog"
+          ]
+      },
+      "headline": "<%= title %>",
+      "url": "<%= seourl %>",
+      "datePublished": "<%= seodate %>",
+      "dateModified": "<%= seodate %>",
+      "image": {
+          "@type": "ImageObject",
+          "url": "<%= mainurl %>randomkavithai.png",
+          "width": 1200,
+          "height": 627
+      },
+      "keywords": "<%= keywords %>",
+      "description": "<%= description %>",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "<%= mainurl %>"
+      }
+  }</script><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head><body><div class="min-h-screen bg-gray-100"><div class="container mx-auto px-5"><br><br><h1 class="flex items-center justify-center font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600"><%= title %></h1><code class="flex items-center justify-center font-bold"><small>📝 Updated at: <%= date %></small></code><br><div class="flex items-center justify-center"><div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-1xl"><div class="p-10 m-1 bg-white rounded"><code><small class="font-medium">📝 Lyrics by: <%= author %></small></code><br><br><div id="tamillyrics" class="text-[14px] leading-relaxed font-medium"> <%- post %> </div><br><br><span class="flex items-center justify-center"><span class="text-[13px] font-medium">#<%= tag %></span></span></div></div><br></div><br><div class="flex items-center justify-center"><button id="btncopy" class="btn flex items-center justify-center inline-block px-12 py-3 rounded text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-medium uppercase" data-clipboard-target="#tamillyrics">📝 Copy Lyrics</button></div><div class="flex items-center justify-center"><div id="copied"></div></div><br><br></div></div><script>new ClipboardJS('.btn');
+if (document.getElementById("btncopy") != null) {
+    document.getElementById("btncopy").addEventListener('click', e => {
+        console.log('copied');
+        document.getElementById("copied").innerHTML = '<p><div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">kavithai Copied</div></p>';
+    })
+}</script></body></html>
