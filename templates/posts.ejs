@@ -40,18 +40,142 @@
 <div class="min-h-screen bg-sky-200">
 <div class="flex h-screen items-center justify-center">
 <div class="mx-auto px-5 text-base leading-relaxed mt-6 mb-6">
-<div id="container">
-<table class="table-auto">
-<tbody>
-</tbody>
-</table>
+<div class="relative block p-8 border p-10 m-1 bg-white rounded shadow-xl rounded-xl">
+<div id="listingTable"></div>
+<br />
+<div class="pagination-block">
+<span class="px-3 py-2 text-sm font-bold text-white bg-pink-600 border border-pink-600 rounded active:text-gray-500" id="button_prev">Prev</span>
+<span id="page_number" class="outline-none"></span>
+<span class="px-3 py-2 text-sm font-bold text-white bg-pink-600 border border-pink-600 rounded active:text-gray-500" id="button_next">Next</span>
 </div>
-<div id="pagination"></div>
+</div>
 </div>
 </div>
 </div>
 
-<script type="text/javascript" src="/js/page.js"></script>
+<script>
+async function get_page() {
+  let response = await fetch("/api/posts/");
+  let data = await response.json();
+  return data;
+}
+get_page().then((data) => {
+  (function () {
+    function Pagination() {
+      const objJson = data;
+
+      const prevButton = document.getElementById("button_prev");
+      const nextButton = document.getElementById("button_next");
+      const clickPageNumber = document.querySelectorAll(".clickPageNumber");
+
+      let current_page = 1;
+      let records_per_page = 3;
+
+      this.init = function () {
+        changePage(1);
+        pageNumbers();
+        selectedPage();
+        clickPage();
+        addEventListeners();
+      };
+
+      let addEventListeners = function () {
+        prevButton.addEventListener("click", prevPage);
+        nextButton.addEventListener("click", nextPage);
+      };
+
+      let selectedPage = function () {
+        let page_number = document
+          .getElementById("page_number")
+          .getElementsByClassName("clickPageNumber");
+        for (let i = 0; i < page_number.length; i++) {
+          if (i == current_page - 1) {
+            page_number[i].style.opacity = "1.0";
+          } else {
+            page_number[i].style.opacity = "0.5";
+          }
+        }
+      };
+
+      let checkButtonOpacity = function () {
+        current_page == 1
+          ? prevButton.classList.add("opacity-page")
+          : prevButton.classList.remove("opacity-page");
+        current_page == numPages()
+          ? nextButton.classList.add("opacity-page")
+          : nextButton.classList.remove("opacity-page");
+      };
+
+      let changePage = function (page) {
+        const listingTable = document.getElementById("listingTable");
+
+        if (page < 1) {
+          page = 1;
+        }
+        if (page > numPages() - 1) {
+          page = numPages();
+        }
+
+        listingTable.innerHTML = "";
+
+        for (
+          var i = (page - 1) * records_per_page;
+          i < page * records_per_page && i < objJson.length;
+          i++
+        ) {
+          listingTable.innerHTML +=
+            "<ul><li><a class='underline text-blue-600 hover:text-blue-800 visited:text-purple-600' href='/"+objJson[i].slug+"/' >" + objJson[i].title + "</a></li></ul>";
+        }
+        checkButtonOpacity();
+        selectedPage();
+      };
+
+      let prevPage = function () {
+        if (current_page > 1) {
+          current_page--;
+          changePage(current_page);
+        }
+      };
+
+      let nextPage = function () {
+        if (current_page < numPages()) {
+          current_page++;
+          changePage(current_page);
+        }
+      };
+
+      let clickPage = function () {
+        document.addEventListener("click", function (e) {
+          if (
+            e.target.nodeName == "SPAN" &&
+            e.target.classList.contains("clickPageNumber")
+          ) {
+            current_page = e.target.textContent;
+            changePage(current_page);
+          }
+        });
+      };
+
+      let pageNumbers = function () {
+        let pageNumber = document.getElementById("page_number");
+        pageNumber.innerHTML = "";
+
+        for (let i = 1; i < numPages() + 1; i++) {
+          pageNumber.innerHTML +=
+            //"<span class='clickPageNumber'>" + i + "</span>";
+              "";
+        }
+      };
+
+      let numPages = function () {
+        return Math.ceil(objJson.length / records_per_page);
+      };
+    }
+    let pagination = new Pagination();
+    pagination.init();
+  })();
+});
+</script>
 
 </body>
 </html>

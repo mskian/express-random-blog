@@ -156,7 +156,7 @@ app.get("/api/posts", (req, res) => {
             slug: matter.read(postsDir+a).data.slug || '/slug',
         });
     })
-    res.json({ 'posts': post_data });
+    res.json(post_data);
   });
 
 app.use('/', function(req, res) {
