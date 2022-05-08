@@ -4,6 +4,7 @@ description: Beast - Arabic Kuthu Song Lyrics - Tamil Song Lyrics.
 author: "Shiva Karthikeyan"
 date: "2022-05-07T04:25:01.108Z"
 tag: "Beast"
+slug: "arabic-kuthu-song-lyrics"
 ---
 
 ஹலமிதி ஹபிபொ ஹலமிதி வந்தாலே  
@@ -134,4 +135,4 @@ tag: "Beast"
 \
 ஹே ஹலமிதி  
 பலிஹபீதா பலிஹபி  
-ஹலமிதி ஹபீபிபோ ஓஓஓ  
+ஹலமிதி ஹபீபிபோ ஓஓஓ
