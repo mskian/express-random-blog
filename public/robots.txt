@@ -28,3 +28,5 @@ Disallow: /
 
 User-agent: HTTrack
 Disallow: /
+
+Sitemap: https://random.tamilwords.net/sitemap.xml
