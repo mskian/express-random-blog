@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 .cache copy
 test.js
+.env
 
 # Runtime data
 pids
