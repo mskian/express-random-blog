@@ -1,12 +1,8 @@
 # ரண்டொம் கவிதை வேர்ல்ட் 🦄
 
-Creating a Markdown Blog with EJS and Express.js - Download the Latest Tamil kavithai images for your Social Status and Stories - kavithai collected Around from the internet and Social profiles.
+Download the Latest Tamil kavithai images and தமிழ் பாடல் வரிகள் for your Social Status and Stories - collected Around from the internet and Social profiles.  
 
-> Build using Express.js and EJS - Express Markdown Blog
-
-its Just for Learing Purpose and Automation Blogging site.
-
-> Post Markdown Content via Restful API and Github API - Experimenting automation blog content Posting
+> Build using Express.js and EJS - Express Markdown Blog  
 
 - Post Demo - <https://random.tamilwords.net/fb-kavithai-3042918/>
 
