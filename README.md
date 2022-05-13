@@ -1,8 +1,8 @@
 # ரண்டொம் கவிதை வேர்ல்ட் 🦄
 
-Download the Latest Tamil kavithai images and தமிழ் பாடல் வரிகள் for your Social Status and Stories - collected Around from the internet and Social profiles.  
+Download the Latest Tamil kavithai images and தமிழ் பாடல் வரிகள் for your Social Status and Stories - collected Around from the internet and Social profiles.
 
-> Build using Express.js and EJS - Express Markdown Blog  
+> Build using Express.js and EJS - Express Markdown Blog
 
 - Post Demo - <https://random.tamilwords.net/fb-kavithai-3042918/>
 
