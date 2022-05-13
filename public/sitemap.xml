@@ -66,4 +66,9 @@
 		<changefreq>daily</changefreq>
 		<priority>0.5</priority>
 	</url>
+	<url>
+		<loc>https://random.tamilwords.net/fb-kavithai-5457/</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.5</priority>
+	</url>
 </urlset>
