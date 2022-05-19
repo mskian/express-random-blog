@@ -29,6 +29,7 @@
     "url": "https://github.com/mskian/express-random-blog/issues"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
     "apicache": "^1.6.3",
     "dompurify": "^2.3.7",
     "ejs": "^3.1.8",

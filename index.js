@@ -161,6 +161,32 @@ app.get("/api/posts", (req, res) => {
     res.json(post_data);
   });
 
+app.get('/wishes/gm', cache('1 hour'), function(req, res) {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const current_page = 'https://' + req.headers.host + req.url;
+
+    res.render('gm', {seourl: current_page || '/',})
+
+});
+
+app.get('/wishes/gn', cache('1 hour'), function(req, res) {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const current_page = 'https://' + req.headers.host + req.url;
+
+    res.render('gn', {seourl: current_page || '/',})
+
+});
+
 app.use('/', function(req, res) {
     res.render('404');
 });
