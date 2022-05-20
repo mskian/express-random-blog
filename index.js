@@ -169,8 +169,9 @@ app.get('/wishes/gm', cache('1 hour'), function(req, res) {
     res.header('Strict-Transport-Security', 'max-age=63072000');
 
     const current_page = 'https://' + req.headers.host + req.url;
+    const homepage = 'https://' + req.headers.host + '/';
 
-    res.render('gm', {seourl: current_page || '/',})
+    res.render('gm', {seourl: current_page || '/', homepage: homepage})
 
 });
 
@@ -182,8 +183,9 @@ app.get('/wishes/gn', cache('1 hour'), function(req, res) {
     res.header('Strict-Transport-Security', 'max-age=63072000');
 
     const current_page = 'https://' + req.headers.host + req.url;
+    const homepage = 'https://' + req.headers.host + '/';
 
-    res.render('gn', {seourl: current_page || '/',})
+    res.render('gn', {seourl: current_page || '/', homepage: homepage})
 
 });
 
