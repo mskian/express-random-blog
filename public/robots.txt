@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /ghost/
 Disallow: /p/
+Disallow: /api/
 
 User-agent: NinjaBot
 Allow: /
