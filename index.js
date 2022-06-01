@@ -189,6 +189,20 @@ app.get('/wishes/gn', cache('1 hour'), function(req, res) {
 
 });
 
+app.get('/wishes/cycle', cache('1 hour'), function(req, res) {
+
+    res.header('X-Frame-Options', 'DENY');
+    res.header('X-XSS-Protection', '1; mode=block');
+    res.header('X-Content-Type-Options', 'nosniff');
+    res.header('Strict-Transport-Security', 'max-age=63072000');
+
+    const current_page = 'https://' + req.headers.host + req.url;
+    const homepage = 'https://' + req.headers.host + '/';
+
+    res.render('cycle', {seourl: current_page || '/', homepage: homepage})
+
+});
+
 app.use('/', function(req, res) {
     res.render('404');
 });
