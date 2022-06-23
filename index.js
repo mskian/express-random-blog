@@ -27,7 +27,7 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-app.locals.umami = '<script async defer data-website-id="11782b99-852c-45fd-b257-76f3ade6c0f8" data-domains="random.tamilwords.net" src="https://hulu.sanweb.info/umami.js"></script>'
+app.locals.umami = '<script async defer data-website-id="11782b99-852c-45fd-b257-76f3ade6c0f8" data-domains="random.tamilwords.net" src="https://hulu.sanweb.info/script.js"></script>'
 
 function getCurrentDate(n) {
     return (n < 10 ? "0" : "") + n
