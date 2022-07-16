@@ -110,7 +110,6 @@ function slugify(string) {
       .replace(/\-\-+/g, "-")
       .replace(/^-+/, "")
       .replace(/-+$/, "")
-      .replace(/-+*/, "")
       .replace(/-+@/, "");
 }
 function postData(event) {
