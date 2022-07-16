@@ -100,7 +100,19 @@ var el = document.querySelector('#postData');
 if (el) {
     el.addEventListener('submit', postData);
 }
-
+function slugify(string) {
+    return string
+      .toString()
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "")
+      .replace(/\-\-+/g, "-")
+      .replace(/^-+/, "")
+      .replace(/-+$/, "")
+      .replace(/-+*/, "")
+      .replace(/-+@/, "");
+}
 function postData(event) {
     event.preventDefault();
     let name = document.querySelector('#name').value;
@@ -109,7 +121,7 @@ function postData(event) {
         console.log('Empty Name');
         document.getElementById("notice").innerHTML = '<br /><p class="text-center font-bold">Enter your Name</p>';
     } else {
-        window.open("https://generate.tamilwords.net/wish/cycle/" + name, "_self", "noopener, noreferrer");
+        window.open("https://generate.tamilwords.net/wish/cycle/" + slugify(name), "_self", "noopener, noreferrer");
     }
 }
 </script>
