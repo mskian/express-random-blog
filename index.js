@@ -218,5 +218,12 @@ app.get('/wishes/friend', cache('1 hour'), function(req, res) {
 });
 
 app.use('/', function(req, res) {
-    res.render('404');
+    res.status(404).render('404');
 });
+
+app.use((err, req, res, next) => {
+    if (!err) return next();
+    return res.status(403).render('404');
+});
+
+module.exports = app;

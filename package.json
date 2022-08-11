@@ -5,7 +5,7 @@
   "description": "Download the Latest Tamil kavithai images for your Social Status and Stories - kavithai collected Around from the internet and Social profiles.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "mocha ./test/* --exit",
     "start": "node index.js",
     "dev": "nodemon index.js --ext '*'",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -29,24 +29,26 @@
     "url": "https://github.com/mskian/express-random-blog/issues"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.2",
     "apicache": "^1.6.3",
-    "dompurify": "^2.3.7",
+    "dompurify": "^2.3.10",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "gray-matter": "^4.0.3",
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "markdown-it": "^13.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "concurrently": "^7.1.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
-    "nodemon": "^2.0.16",
-    "postcss": "^8.4.13",
-    "prettier": "^2.6.2",
-    "tailwindcss": "^3.0.24"
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4",
+    "tailwindcss": "^3.1.8"
   }
 }
