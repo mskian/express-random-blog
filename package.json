@@ -45,7 +45,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "mocha": "^10.0.0",
-    "nodemon": "^2.0.19",
+    "nodemon": "^2.0.20",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "supertest": "^6.2.4",
