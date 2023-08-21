@@ -46,7 +46,7 @@
     "gulp-htmlmin": "^5.0.1",
     "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.28",
     "prettier": "^3.0.2",
     "supertest": "^6.3.3",
     "tailwindcss": "^3.3.3"
