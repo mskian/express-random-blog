@@ -34,7 +34,7 @@
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "gray-matter": "^4.0.3",
-    "jsdom": "^25.0.0",
+    "jsdom": "^25.0.1",
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
