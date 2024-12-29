@@ -32,7 +32,7 @@
     "apicache": "^1.6.3",
     "dompurify": "^3.2.2",
     "ejs": "^3.1.10",
-    "express": "^4.21.1",
+    "express": "^4.21.2",
     "gray-matter": "^4.0.3",
     "jsdom": "^25.0.1",
     "markdown-it": "^14.1.0"
